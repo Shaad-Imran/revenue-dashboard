@@ -50,6 +50,11 @@ const RecommendProject = styled.div`
   &:hover {
     box-shadow: ${hoverEffect};
   }
+  @media (max-width: 1080px) {
+    height: max-content;
+    width: 80%;
+    margin: 2rem 0;
+  }
 `;
 
 const CardContent = styled.div`
@@ -60,9 +65,15 @@ const Detail = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.2rem;
+    margin-bottom: 1rem;
+  }
 `;
 const InfoContainer = styled.div`
-  border: 2px solid rebeccapurple;
   display: flex;
   align-items: center;
 `;
@@ -98,6 +109,10 @@ const PriceContainer = styled.div`
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   background-color: rgba(146, 166, 255, 0.3);
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
 `;
 const Price = styled.div``;
 

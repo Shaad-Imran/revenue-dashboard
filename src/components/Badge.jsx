@@ -16,9 +16,8 @@ const Badge = ({
   );
 };
 
-const Div = styled.div`
+const Div = styled.span`
   padding: 0.3rem 1rem;
-  border: 2px solid orange;
   border-radius: 1rem;
   font-weight: 500;
   color: white;

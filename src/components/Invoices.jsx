@@ -56,20 +56,39 @@ const InvoicesContainer = styled.div`
   &:hover {
     box-shadow: ${hoverEffect};
   }
+  @media (max-width: 1080px) {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
-const CardContent = styled.div``;
+const CardContent = styled.div`
+  @media (max-width: 1080px) {
+    margin: 2rem 0;
+  }
+`;
 const Invoice = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin: 0.4rem;
   padding-top: 0.6rem;
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
 const Info = styled.div`
   display: flex;
   align-items: center;
   width: 50%;
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
 `;
 const Avatar = styled.div`
   img {
@@ -91,6 +110,11 @@ const Container = styled.div`
   justify-content: space-between;
   width: 30%;
   align-items: center;
+  @media (max-width: 1080px) {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
 `;
 
 const Price = styled.div``;

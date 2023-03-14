@@ -34,6 +34,12 @@ const JoinChannel = styled.div`
   &:hover {
     box-shadow: ${hoverEffect};
   }
+  @media (max-width: 1080px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: max-content;
+    width: 80%;
+  }
 `;
 
 const CardContent = styled.div`
@@ -42,6 +48,10 @@ const CardContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
 
 const Slack = styled.div`

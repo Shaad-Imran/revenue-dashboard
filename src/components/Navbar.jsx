@@ -21,17 +21,23 @@ const Navbar = () => {
 };
 
 const NavbarContainer = styled.nav`
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 10%;
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
 `;
 
 const Text = styled.h1`
   span {
     font-weight: 500;
     color: #484258;
+  }
+  @media (max-width: 1080px) {
+    margin-top: 1rem;
   }
 `;
 const InputContainer = styled.div`

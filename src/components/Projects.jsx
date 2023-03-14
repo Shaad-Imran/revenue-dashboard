@@ -43,6 +43,11 @@ const YourProjects = styled.div`
   &:hover {
     box-shadow: ${hoverEffect};
   }
+  @media (max-width: 1080px) {
+    height: max-content;
+    width: 75%;
+    margin-top: 1rem;
+  }
 `;
 
 const Project = styled.div`
@@ -62,6 +67,9 @@ const Detail = styled.div`
 `;
 const Title = styled.h3`
   font-weight: 500;
+  @media (max-width: 1080px) {
+    font-size: 1rem;
+  }
 `;
 const SubTitle = styled.h5`
   font-weight: 300;

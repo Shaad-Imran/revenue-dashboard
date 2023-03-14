@@ -22,7 +22,6 @@ const Earnings = () => {
 };
 
 const EarningsCard = styled.div`
-  border: 2px solid greenyellow;
   height: 100%;
   width: 14rem;
   background-color: ${themeColor};
@@ -33,10 +32,12 @@ const EarningsCard = styled.div`
   &:hover {
     box-shadow: ${hoverEffect};
   }
+  @media (max-width: 1080px) {
+    width: 80%;
+  }
 `;
 
 const CardContent = styled.div`
-  border: 1px solid darkcyan;
   margin: 1rem;
 `;
 

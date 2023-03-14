@@ -38,7 +38,6 @@ const Info = () => {
 };
 
 const InfoCard = styled.div`
-  border: 2px solid burlywood;
   height: 100%;
   width: 14rem;
   background-color: white;
@@ -50,10 +49,12 @@ const InfoCard = styled.div`
   &:hover {
     box-shadow: ${hoverEffect};
   }
+  @media (max-width: 1080px) {
+    width: 80%;
+  }
 `;
 
 const Card = styled.div`
-  border: 2px dashed yellow;
   background-color: rgba(183, 194, 243, 0.3);
   border-radius: 1rem;
   margin-bottom: 1rem;

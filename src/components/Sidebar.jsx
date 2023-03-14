@@ -45,7 +45,9 @@ const Sidebar = () => {
 };
 
 const Container = styled.div`
+  /* border: 2px solid green; */
   width: 20%;
+  /* width: 30%; */
   height: 100% !important;
   border-radius: 2rem;
   background-color: #091322;
@@ -53,6 +55,12 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+  margin-right: 0.5rem;
+  @media (max-width: 1080px) {
+    width: 100%;
+    height: max-content !important;
+    margin-right: 0rem;
+  }
 `;
 
 const ProfileContainer = styled.div`
@@ -76,13 +84,18 @@ const Name = styled.h1`
 `;
 
 const LinksContainer = styled.div`
+  /* border: 2px solid orange; */
   background-color: ${darkThemeColor};
   height: 100%;
   width: 100%;
   border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Links = styled.ul`
+  /* border: 2px solid green; */
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -91,7 +104,7 @@ const Links = styled.ul`
 `;
 
 const Link = styled.li`
-  margin-left: 25%;
+  /* margin-left: 25%; */
   margin-bottom: 2rem;
   display: flex;
   gap: 1rem;
@@ -119,6 +132,9 @@ const ContactContainer = styled.div`
   a {
     color: white;
     text-decoration: none;
+  }
+  @media (max-width: 1080px) {
+    margin-bottom: 2rem;
   }
 `;
 
